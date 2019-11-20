@@ -1,1 +1,1 @@
-web: gunicorn app:mechtroid
+web: gunicorn app:app
