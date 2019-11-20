@@ -117,7 +117,6 @@ div.foo{
             <div class="container">
                 <div class="header">
 
-	</head>
 	<body>
 		<div class="animated  fadeIn delay-1s">
 		<div class="foo">
@@ -128,11 +127,22 @@ div.foo{
   <span class="letter" data-letter="L">L</span>
   <span class="letter" data-letter="T">T</span>
 
-</div>
+
 <br>
             
-<div class="animated  fadeIn delay-1s">
+
+  <h2>Centroid is :{{ centroid }} units</h1>
+  <h2>Moment of inertia is :{{ inertia }} units</h1>
+  <h2>Area is :{{ area }} units</h1>
+  <br>
+  <a href="{{ url_for('index') }}"><button type="button" class="btn btn-success">Go back</button></a>
+</div>  
 </div>
+</div>
+</div>
+</div>
+</div>
+<<<<<<< HEAD
                   <h2>Centroid is :{{ centroid }} units</h1>
                   <h2>Inertia is :{{ inertia }} units</h1>
                   <h2>Area is :{{ area }} units</h1>
@@ -142,5 +152,7 @@ div.foo{
             </div>
 <div class="button">
 </div
+=======
+>>>>>>> 2e6edf0de5307bd23280421cc6d045ce5e9e5a9f
 	</body>
 </html>
