@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> PRs during Hacktoberfest </title>
+		<title> Result </title>
    		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -10,54 +10,136 @@
         <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+    	<script src="script.js">
+</script>
 
-    
+<style>
+	body {
+  background-image: url("http://getwallpapers.com/wallpaper/full/f/e/8/58252.jpg");
+  background-color: #2F2F31;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+  color: white;
+}
+body {
+  page-break-before: left;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Righteous';
+
+}
+h5 {
+  text-align: center;
+  color: white;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+    font-family: 'Righteous'
+}
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+</style>
     </head>	
-    <style>
-	html{
-        height:100%;
-    }
-    h1{
-		margin-top: 80px !important; 
-		color: black ;
-        font-family: 'Righteous', cursive;
-        text-align:center;
-	}
-	body{   
-
-		height: 100%;
- 		margin: 0;
-		color: black ;
-		font-size: 150%;
-		font-family: 'Advent Pro', sans-serif;
-        background-image: linear-gradient(to right top, #e10000, #e20023, #e00039, #db004c, #d3005d, #d31e6e, #d1307f, #ce3f8e, #d456a4, #d96ab9, #dd7ece, #e191e1);
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .header{
-        color:black;
-        font-size:200%;
-        text-align: center
-    }
-    
-    </style>
+   
     <body>
-
-
-    <div class="bg">
-        <div class="animated  bounceInDown delay-.5s">
+    <div class="title">
             <div class="container">
                 <div class="header">
 
-                    <h1>For the only polygon</h1>
-                </div>
-                  <h1>Centroid is :{{ centroid }} units</h1>
-                  <h1>Intertia is :{{ inertia }} units</h1>
-                  <h1>Area is :{{ area }} units</h1>
+	</head>
+	<body>
+		<div class="animated  fadeIn delay-1s">
+		<div class="foo">
+  <span class="letter" data-letter="R">R</span>
+  <span class="letter" data-letter="E">E</span>
+  <span class="letter" data-letter="S">S</span>
+  <span class="letter" data-letter="U">U</span>
+  <span class="letter" data-letter="L">L</span>
+  <span class="letter" data-letter="T">T</span>
+
+</div>
+<br>
+            
+<div class="animated  fadeIn delay-1s">
+</div>
+                  <h2>Centroid is :{{ centroid }} units</h1>
+                  <h2>Inertia is :{{ inertia }} units</h1>
+                  <h2>Area is :{{ area }} units</h1>
             </div>  
-        </div>
     </div>
+            </div>
+<div class="button">
+</div
 	</body>
 </html>

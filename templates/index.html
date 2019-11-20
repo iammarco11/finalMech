@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> Home </title>
+		<title> Polygon </title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<style>
 		body {
   background-image: url("http://getwallpapers.com/wallpaper/full/f/e/8/58252.jpg");
@@ -19,16 +20,25 @@ body {
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 h2 {
   text-align: center;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+
 }
 h5 {
   text-align: center;
   color: white;
   font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 
+
+}
+.textit{
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -107,27 +117,30 @@ div.foo{
 	<body>
 		<div class="animated  fadeIn delay-1s">
 		<div class="foo">
-  <span class="letter" data-letter="H">H</span>
-  <span class="letter" data-letter="O">O</span>
-  <span class="letter" data-letter="M">M</span>
-  <span class="letter" data-letter="E">E</span>
   <span class="letter" data-letter="P">P</span>
-  <span class="letter" data-letter="A">A</span>
+  <span class="letter" data-letter="O">O</span>
+  <span class="letter" data-letter="L">L</span>
+  <span class="letter" data-letter="Y">Y</span>
   <span class="letter" data-letter="G">G</span>
-  <span class="letter" data-letter="E">E</span>
+  <span class="letter" data-letter="O">O</span>
+  <span class="letter" data-letter="N">N</span>
 </div>
 		<h5>Enter a polygon</h5>
 		<br>
 		<div class="col-xs-4 col-xs-offset-4">
 		<form method="POST">
-		  <div class="form-group">
+      <div class="textit">
+      <div class="form-group">
 		    <label for="text">Enter the number of sides of the polygon: </label>
 		    <input type="text" class="form-control" id="input" name="inputShape" placeholder="Enter sides" required><br>
         <label for="text">Enter the coordinates of the polygon: </label>
         <input type="text" class="form-control" id="input" name="inputX" placeholder="Enter X coordinates" required><br>
         <input type="text" class="form-control" id="input" name="inputY" placeholder="Enter Y coordinates" required><br>
-		  </div>
-		  <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="{{ url_for('index') }}"><button type="button" class="btn btn-success">Go back</button></a>
+    </div>
 		</form>		
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,93 +1,142 @@
-<html>
-<head>
-		<title> Home </title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-		<style>
-        #oopss {
-            background: linear-gradient(-45deg, rgba(255,243,0, 1), rgba(239,228,0, 1));
-            position: fixed;
-            left: 0px;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            line-height: 1.5em;
-            z-index: 9999;
-            #error-text {
-                font-size: 40px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-family: 'Shabnam', Tahoma, sans-serif;
-                color: #000;
-                direction: rtl;
-                img {
-                    margin: 85px auto 20px;
-                    height: 342px;
-                }
-                span {
-                    position: relative;
-                    font-size: 3.3em;
-                    font-weight: 900;
-                    margin-bottom: 50px;
-                }
-                p {
-                    &.p-a {
-                        font-size: 19px;
-                        margin: 30px 0 15px 0;
-                    }  
-                    &.p-b {
-                        font-size: 15px;
-                    }  
-                }
-                .back { // Homepage bButton
-                    background: #fff;
-                    color: #000;
-                    font-size: 30px;
-                    text-decoration: none;
-                    margin: 2em auto 0;
-                    padding: .7em 2em;
-                    border-radius: 500px;
-                    box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #fff300;
-                    font-weight: 900;
-                    transition: all 300ms ease; 
-                    &:hover {
-                        transform: translateY(-13px);
-                        box-shadow: 0 35px 90px 4px rgba(0,0,0, .3), inset 0px 0 0 3px #000;
-                    }
-                }
-            }
-        }
+<!DOCTYPE html>
+<html lang="en">
 
-                @font-face {
-                    font-family: Shabnam;
-                    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot');
-                    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff') format('woff'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff2') format('woff2'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.ttf') format('truetype');
-                    font-weight: bold;
-                }
-                
-                @font-face {
-                    font-family: Shabnam;
-                    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot');
-                    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff') format('woff'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff2') format('woff2'),
-                        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.ttf') format('truetype');
-                    font-weight: normal;
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Error</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	
+<style>
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+  background: #030005;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 180px;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+      -ms-transform: translate(-50% , -50%);
+          transform: translate(-50% , -50%);
+  font-size: 224px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -12px;
+  color: #030005;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+  letter-spacing: -20px;
+}
+
+
+.notfound .notfound-404 h2 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #8400ff;
+  letter-spacing: 13px;
+  margin: 0;
+}
+
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  color: #8400ff;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+      font-size: 182px;
+  }
+}
+
+
+
 </style>
-</head> 
+</head>
+
 <body>
-<div id='oopss'>
-    <div id='error-text'>
-        <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
-        <span>Oops! Input error</span>
-        <p class="p-a">Try putting some other numbers as the input</p>
-        <a href='#' class="back">Sorry for this </a>
-    </div>
-</div>
-</body>
+
+	<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>Input</h1>
+				<h2>Error</h2>
+			</div>
+			<a href="{{ url_for('index') }}">Homepage</a>
+		</div>
+	</div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>

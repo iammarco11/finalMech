@@ -2,8 +2,15 @@ from flask import Flask, render_template,request
 
 app= Flask(__name__)
 
-@app.route('/',methods = ['GET','POST'])
+@app.route('/')
 def index():
+    return render_template('home.html')
+
+
+
+
+@app.route('/polygon',methods = ['GET','POST'])
+def polygon():
     listX=[]
     listY=[]
     if request.method == 'POST': # basic Flask structure 
@@ -48,15 +55,7 @@ def cut():
 
 @app.errorhandler(500)
 def not_found(e):
-  return render_template('prs.html'), 500
-
-
-
-
-
-
-
-
+  return render_template('error.html'), 500
 
 def polygonArea(X, Y, n): 
     area = 0.0
@@ -316,4 +315,4 @@ def codeCut(Xt,Yt,n,XCut,YCut,nCut):
 
 
 if __name__=='__main__':
-	app.run(debug=True)
+	app.run()
